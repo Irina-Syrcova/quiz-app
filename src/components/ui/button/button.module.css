@@ -16,6 +16,7 @@
   line-height: 24px;
   font-weight: 700;
   color: var(--bg);
+  font-family: inherit;
 }
 
 .caption {

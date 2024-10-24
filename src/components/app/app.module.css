@@ -1,0 +1,29 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  position: relative;
+  max-width: 590px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  padding: 32px;
+  background-color: var(--bg);
+  border-radius: 10px;
+  color: var(--primary);
+  text-align: center;
+}
+
+.caption {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: var(--bg);
+}
+
+.link {
+  color: var(--bg);
+}

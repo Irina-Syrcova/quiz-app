@@ -1,0 +1,36 @@
+@import url(/fonts/fonts.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  min-width: 1280px;
+  background-image: url('/images/bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Inter';
+  background-color: var(--bg);
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+:root {
+  --bg: #F1F1EF;
+  --primary: #125365;
+  --secondary: #FF9C46;
+}

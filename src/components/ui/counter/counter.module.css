@@ -1,0 +1,32 @@
+.counter {
+  display: flex;
+  flex-direction: row;
+  column-gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  width: 60px;
+  height: 60px;
+  border: none;
+  outline: none;
+}
+
+.input {
+  width: 118px;
+  height: 76px;
+  border-radius: 10px;
+  border: 4px solid var(--primary);
+  outline: none;
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--primary);
+  background-color: transparent;
+}
+
+.input::placeholder {
+  color: var(--primary);
+}

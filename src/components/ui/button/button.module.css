@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  align-items: center;
+}
+
+.button {
+  width: 270px;
+  height: 72px;
+  padding: 24px;
+  background-color: var(--secondary);
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--bg);
+}
+
+.caption {
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 400;
+}
+
+.enter {
+  font-weight: 700;
+}

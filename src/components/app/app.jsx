@@ -1,20 +1,43 @@
-import { Card } from '../ui/card/card';
-import { Logo } from '../ui/logo/logo';
+import { useState, useEffect, useRef } from 'react';
 
-import styles from './app.module.css';
+import Header from '../header/header';
+import Card from '../ui/card/card';
+import Footer from '../footer/footer';
 
 function App() {
+  const [page, setPage] = useState("welcome");
+  const [counter, setCounter] = useState(18);
+  const [questionArray, setQuestionArray] = useState([]);
+  const [answerArray, setAnswerArray] = useState([]);
+  const ref = useRef(null);
+
+  function handlePressEnter(event) {
+    if((event.key === 'Enter')){
+      ref.current.click()
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('keydown', handlePressEnter); 
+    return () => window.removeEventListener('keydown', handlePressEnter);
+});
 
   return (
-    <main className={styles.app}>
-      <div>
-        <Logo />
-      </div>
-      <div className={styles.content}>
-        <Card />
-      </div>
-      <p className={styles.caption}>Проект выполнен в рамках стажировки <a className={styles.link} href="https://preax.ru">PREAX</a></p>
-    </main>
+    <>
+      <Header />
+      <Card 
+        page={page} 
+        setPage={setPage}
+        counter={counter}
+        setCounter={setCounter}
+        questionArray={questionArray}
+        setQuestionArray={setQuestionArray}
+        answerArray={answerArray}
+        setAnswerArray={setAnswerArray}
+        buttonRef={ref}
+      />
+      <Footer />
+    </>
   )
 }
 

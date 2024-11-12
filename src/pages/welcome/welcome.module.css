@@ -1,0 +1,32 @@
+.welcome {
+  position: absolute;
+  display: block;
+  width: 135px;
+  height: 146px;
+  right: 0;
+  top: -80px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}

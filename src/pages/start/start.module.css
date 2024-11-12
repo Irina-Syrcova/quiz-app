@@ -1,0 +1,28 @@
+.close {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+  top: -60px;
+  right: 0;
+  fill: transparent;
+  stroke: var(--bg);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.counts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.count {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-block-start: 24px;
+}

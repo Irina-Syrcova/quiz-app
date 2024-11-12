@@ -11,6 +11,21 @@
   height: 60px;
   border: none;
   outline: none;
+  cursor: pointer;
+  stroke: var(--primary);
+  fill: var(--primary);
+  transition: all 0.2s;
+}
+
+.button:hover {
+  stroke: var(--secondary);
+  fill: var(--secondary);
+}
+
+.button:disabled {
+  cursor: auto;
+  stroke: #81A1A9;
+  fill: #81A1A9;
 }
 
 .input {
@@ -25,8 +40,26 @@
   text-align: center;
   color: var(--primary);
   background-color: transparent;
+  font-family: inherit;
 }
 
 .input::placeholder {
   color: var(--primary);
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
+.input:focus-visible {
+  border-color: var(--secondary);
+  color: var(--secondary);
 }

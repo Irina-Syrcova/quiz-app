@@ -1,0 +1,12 @@
+.caption {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: var(--bg);
+}
+
+.link {
+  color: var(--bg);
+  text-decoration: none;
+  border-block-end: 1px solid;
+}

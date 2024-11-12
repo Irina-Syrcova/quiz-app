@@ -17,6 +17,7 @@
   font-weight: 700;
   color: var(--bg);
   font-family: inherit;
+  cursor: pointer;
 }
 
 .caption {
@@ -27,4 +28,13 @@
 
 .enter {
   font-weight: 700;
+}
+
+.disabled {
+  color: #81A1A9;
+
+  .button {
+    background-color: #EDD0B6;
+    cursor: auto;
+  }
 }

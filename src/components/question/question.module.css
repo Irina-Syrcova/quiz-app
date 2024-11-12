@@ -1,0 +1,18 @@
+.question {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.flag {
+  display: block;
+  height: 60px;
+  margin-block-end: 16px;
+  border-radius: 10px;
+}
+
+.subtitle {
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 500;
+}
